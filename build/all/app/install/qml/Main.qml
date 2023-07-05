@@ -1,0 +1,82 @@
+/*
+ * Copyright (C) 2023  Henrik Rosenke
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; version 3.
+ *
+ * ut-backup is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+import QtQuick 2.7
+import Lomiri.Components 1.3
+//import QtQuick.Controls 2.2
+import QtQuick.Layouts 1.3
+import Qt.labs.settings 1.0
+import io.thp.pyotherside 1.4
+
+MainView {
+    id: root
+    objectName: 'mainView'
+    applicationName: 'ut-backup.darkschnitzel'
+    automaticOrientation: true
+
+    width: units.gu(45)
+    height: units.gu(75)
+
+    PageStack {
+        id: pageStack
+
+        Component.onCompleted: push(page0)
+
+        Page {
+            id: page0
+            visible: false
+            anchors.fill: parent
+            header: PageHeader {
+                id: header0
+                title: i18n.tr("About")
+                trailingActionBar {
+                    actions: [
+                        Action {
+                            iconName: "info"
+                            text: i18n.tr("About")
+                            onTriggered: pageStack.push(Qt.resolvedUrl("About.qml"))
+                            
+#                   },
+#                   Action {
+#                       iconName: "dialog-question-symbolic"
+#                       text: i18n.tr("Help")
+#                       onTriggered: Qt.openUrlExternally("https://docs.waydro.id")
+                        }
+                    ]
+                }
+            }
+        }
+    }
+
+    Python {
+        id: python
+
+        Component.onCompleted: {
+            addImportPath(Qt.resolvedUrl('../src/'));
+
+            importModule('example', function() {
+                console.log('module imported');
+                python.call('example.speak', ['Hello World!'], function(returnValue) {
+                    console.log('example.speak returned ' + returnValue);
+                })
+            });
+        }
+
+        onError: {
+            console.log('python error: ' + traceback);
+        }
+    }
+}

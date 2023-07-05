@@ -1,0 +1,15 @@
+{
+    "name": "ut-backup.darkschnitzel",
+    "description": "Graphical Backup Tool",
+    "architecture": "all",
+    "title": "ut-backup",
+    "hooks": {
+        "ut-backup": {
+            "apparmor": "ut-backup.apparmor",
+            "desktop":  "ut-backup.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Henrik Rosenke <h.rosenke@tutanota.com>",
+    "framework" : "ubuntu-sdk-20.04"
+}

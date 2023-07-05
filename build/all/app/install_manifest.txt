@@ -1,0 +1,8 @@
+/./manifest.json
+//ut-backup.apparmor
+//assets/logo.svg
+//src/example.py
+//qml/Main.qml.orig
+//qml/About.qml
+//qml/Main.qml
+//ut-backup.desktop

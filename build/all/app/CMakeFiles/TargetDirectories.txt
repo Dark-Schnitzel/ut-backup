@@ -1,0 +1,15 @@
+/home/hank/git/ut-backup/build/all/app/CMakeFiles/ut-backup.desktop.dir
+/home/hank/git/ut-backup/build/all/app/CMakeFiles/ut-backup_FILES.dir
+/home/hank/git/ut-backup/build/all/app/CMakeFiles/edit_cache.dir
+/home/hank/git/ut-backup/build/all/app/CMakeFiles/rebuild_cache.dir
+/home/hank/git/ut-backup/build/all/app/CMakeFiles/list_install_components.dir
+/home/hank/git/ut-backup/build/all/app/CMakeFiles/install.dir
+/home/hank/git/ut-backup/build/all/app/CMakeFiles/install/local.dir
+/home/hank/git/ut-backup/build/all/app/CMakeFiles/install/strip.dir
+/home/hank/git/ut-backup/build/all/app/po/CMakeFiles/ut-backup.darkschnitzel.pot.dir
+/home/hank/git/ut-backup/build/all/app/po/CMakeFiles/edit_cache.dir
+/home/hank/git/ut-backup/build/all/app/po/CMakeFiles/rebuild_cache.dir
+/home/hank/git/ut-backup/build/all/app/po/CMakeFiles/list_install_components.dir
+/home/hank/git/ut-backup/build/all/app/po/CMakeFiles/install.dir
+/home/hank/git/ut-backup/build/all/app/po/CMakeFiles/install/local.dir
+/home/hank/git/ut-backup/build/all/app/po/CMakeFiles/install/strip.dir
