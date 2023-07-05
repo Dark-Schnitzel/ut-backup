@@ -1,0 +1,22 @@
+GUI:
+	Configure Backup:
+		- Where to backup (ssh, smb, nfs, webdav/nextcloud, git)
+		- what to backup (which apps, which dirs from home)
+		- Backup Waydroid?
+		- Encryption?
+	Restore Backup:
+		- Choose what to restore
+
+Backup Logic (Python):
+	- backup app list
+	- create single tar.gz archive, should be unique with date, device and os version.
+	- Push backup log to remote when finished
+
+Restore Logic (Python):
+	- Install apps that are not present in the system
+
+Other:
+	- create Backups periodically (systemd)
+	- Backup Retention Configuration
+	- Report Errors and log everything
+	 

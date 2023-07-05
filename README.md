@@ -2,6 +2,11 @@
 
 Graphical Backup Tool
 
+# Build
+you need clickable to build this app. https://clickable-ut.dev/en/latest/install.html
+Connect your Ubuntu Phone via USB, change in the main dir and run 'clickable'.
+If you want to run the app on your Machine for Development run 'clickable desktop' instead.
+
 ## License
 
 Copyright (C) 2023  Henrik Rosenke
